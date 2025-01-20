@@ -1,12 +1,20 @@
-# Symbols defined in the C spec.
-# These are taken from https://port70.net/~nsz/c/c99/n1256.html#B
+## Symbols defined in the C spec.
+## These are taken from https://port70.net/~nsz/c/c99/n1256.html#B
 
 [
-  # B.1 Diagnostics <assert.h>
+
+  ## B.2 Neovim Features <neovim.h>
+  { symbol: ["Neovim", private, "<neovim.h>", public ] },
+  { symbol: ["Advanced UI Support", private, "<neovim.h>", public ] },
+  { symbol: ["Extensibility", private, "<neovim.h>", public ] },
+  { symbol: ["Asynchronous Job Control", private, "<neovim.h>", public ] },
+  { symbol: ["API Access", private, "<neovim.h>", public ] },
+
+  ## B.1 Diagnostics <assert.h>
   { symbol: ["NDEBUG", private, "<assert.h>", public ] },
   { symbol: ["void assert(scalar expression);", private, "<assert.h>", public ] },
 
-  # B.2 Complex <complex.h>
+  ## B.2 Complex <complex.h>
   { symbol: ["complex", private, "<complex.h>", public ] },
   { symbol: ["_Complex_I", private, "<complex.h>", public ] },
   { symbol: ["imaginary", private, "<complex.h>", public ] },
@@ -79,7 +87,7 @@
   { symbol: ["crealf", private, "<complex.h>", public ] },
   { symbol: ["creall", private, "<complex.h>", public ] },
 
-  #B.3 Character handling <ctype.h>
+  ##B.3 Character handling <ctype.h>
   { symbol: ["isalnum", private, "<ctype.h>", public ] },
   { symbol: ["isalpha", private, "<ctype.h>", public ] },
   { symbol: ["isblank", private, "<ctype.h>", public ] },
